@@ -1,5 +1,4 @@
 using System.Diagnostics;
-using System.IO.Pipes;
 
 namespace Scoreboard
 {
@@ -69,17 +68,17 @@ namespace Scoreboard
 
         private void AwayPlus1_Click(object sender, EventArgs e)
         {
-            AwayScore.Text = (Convert.ToInt16(HomeScore.Text) + 1).ToString();
+            AwayScore.Text = (Convert.ToInt16(AwayScore.Text) + 1).ToString();
         }
 
         private void AwayPlus2_Click(object sender, EventArgs e)
         {
-            AwayScore.Text = (Convert.ToInt16(HomeScore.Text) + 2).ToString();
+            AwayScore.Text = (Convert.ToInt16(AwayScore.Text) + 2).ToString();
         }
 
         private void AwayPlus3_Click(object sender, EventArgs e)
         {
-            AwayScore.Text = (Convert.ToInt16(HomeScore.Text) + 3).ToString();
+            AwayScore.Text = (Convert.ToInt16(AwayScore.Text) + 3).ToString();
         }
     }
 }
