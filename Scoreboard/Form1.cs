@@ -29,7 +29,8 @@ namespace Scoreboard
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            TimerDisplay.Text = $"{sw.ElapsedMilliseconds / 60000:00}:{(sw.ElapsedMilliseconds / 1000) - 60 * (sw.ElapsedMilliseconds / 60000):00}";
+            long TimeFrom10m = 600000 - sw.ElapsedMilliseconds;
+            TimerDisplay.Text = $"{TimeFrom10m / 60000}:{(TimeFrom10m / 1000) - 60 * (TimeFrom10m / 60000):00}";
             if (psw.ElapsedMilliseconds / 1000 == 24)
             {
                 timer1.Stop();
