@@ -46,19 +46,22 @@
             // 
             // TimerDisplay
             // 
+            TimerDisplay.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             TimerDisplay.AutoSize = true;
+            TimerDisplay.Font = new Font("Verdana", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
             TimerDisplay.ForeColor = Color.Red;
-            TimerDisplay.Location = new Point(242, 52);
+            TimerDisplay.Location = new Point(834, 100);
             TimerDisplay.Name = "TimerDisplay";
-            TimerDisplay.Size = new Size(37, 15);
+            TimerDisplay.Size = new Size(133, 45);
             TimerDisplay.TabIndex = 0;
-            TimerDisplay.Text = "Timer";
+            TimerDisplay.Text = "00:00";
             // 
             // StartTimer
             // 
-            StartTimer.Location = new Point(285, 66);
+            StartTimer.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            StartTimer.Location = new Point(842, 193);
             StartTimer.Name = "StartTimer";
-            StartTimer.Size = new Size(75, 23);
+            StartTimer.Size = new Size(118, 37);
             StartTimer.TabIndex = 1;
             StartTimer.Text = "Start/Stop";
             StartTimer.UseVisualStyleBackColor = true;
@@ -70,19 +73,22 @@
             // 
             // PosessionTimer
             // 
+            PosessionTimer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             PosessionTimer.AutoSize = true;
+            PosessionTimer.Font = new Font("Verdana", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
             PosessionTimer.ForeColor = Color.Goldenrod;
-            PosessionTimer.Location = new Point(446, 52);
+            PosessionTimer.Location = new Point(842, 145);
             PosessionTimer.Name = "PosessionTimer";
-            PosessionTimer.Size = new Size(95, 15);
+            PosessionTimer.Size = new Size(105, 45);
             PosessionTimer.TabIndex = 2;
-            PosessionTimer.Text = " Posession Timer";
+            PosessionTimer.Text = "24.0";
             // 
             // ResetPosession
             // 
-            ResetPosession.Location = new Point(366, 66);
+            ResetPosession.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            ResetPosession.Location = new Point(833, 236);
             ResetPosession.Name = "ResetPosession";
-            ResetPosession.Size = new Size(109, 23);
+            ResetPosession.Size = new Size(134, 59);
             ResetPosession.TabIndex = 3;
             ResetPosession.Text = "Reset Possession";
             ResetPosession.UseVisualStyleBackColor = true;
@@ -91,36 +97,44 @@
             // HomeScore
             // 
             HomeScore.AutoSize = true;
-            HomeScore.Location = new Point(266, 149);
+            HomeScore.Font = new Font("Verdana", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
+            HomeScore.ForeColor = Color.Tomato;
+            HomeScore.Location = new Point(751, 100);
             HomeScore.Name = "HomeScore";
-            HomeScore.Size = new Size(13, 15);
+            HomeScore.Size = new Size(44, 45);
             HomeScore.TabIndex = 4;
             HomeScore.Text = "0";
             // 
             // AwayScore
             // 
             AwayScore.AutoSize = true;
-            AwayScore.Location = new Point(478, 149);
+            AwayScore.Font = new Font("Verdana", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
+            AwayScore.ForeColor = Color.Tomato;
+            AwayScore.Location = new Point(1007, 100);
             AwayScore.Name = "AwayScore";
-            AwayScore.Size = new Size(13, 15);
+            AwayScore.Size = new Size(44, 45);
             AwayScore.TabIndex = 5;
             AwayScore.Text = "0";
             // 
             // HomePlus1
             // 
-            HomePlus1.Location = new Point(239, 176);
+            HomePlus1.BackColor = Color.White;
+            HomePlus1.FlatAppearance.BorderSize = 0;
+            HomePlus1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            HomePlus1.Location = new Point(620, 75);
             HomePlus1.Name = "HomePlus1";
-            HomePlus1.Size = new Size(75, 23);
+            HomePlus1.Size = new Size(95, 35);
             HomePlus1.TabIndex = 6;
             HomePlus1.Text = "+1";
-            HomePlus1.UseVisualStyleBackColor = true;
+            HomePlus1.UseVisualStyleBackColor = false;
             HomePlus1.Click += HomePlus1_Click;
             // 
             // HomePlus2
             // 
-            HomePlus2.Location = new Point(239, 205);
+            HomePlus2.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            HomePlus2.Location = new Point(620, 129);
             HomePlus2.Name = "HomePlus2";
-            HomePlus2.Size = new Size(75, 23);
+            HomePlus2.Size = new Size(95, 35);
             HomePlus2.TabIndex = 7;
             HomePlus2.Text = "+2";
             HomePlus2.UseVisualStyleBackColor = true;
@@ -128,9 +142,10 @@
             // 
             // HomePlus3
             // 
-            HomePlus3.Location = new Point(239, 234);
+            HomePlus3.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            HomePlus3.Location = new Point(620, 184);
             HomePlus3.Name = "HomePlus3";
-            HomePlus3.Size = new Size(75, 23);
+            HomePlus3.Size = new Size(95, 35);
             HomePlus3.TabIndex = 8;
             HomePlus3.Text = "+3";
             HomePlus3.UseVisualStyleBackColor = true;
@@ -138,9 +153,10 @@
             // 
             // AwayPlus1
             // 
-            AwayPlus1.Location = new Point(446, 176);
+            AwayPlus1.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            AwayPlus1.Location = new Point(1094, 77);
             AwayPlus1.Name = "AwayPlus1";
-            AwayPlus1.Size = new Size(75, 23);
+            AwayPlus1.Size = new Size(95, 35);
             AwayPlus1.TabIndex = 9;
             AwayPlus1.Text = "+1";
             AwayPlus1.UseVisualStyleBackColor = true;
@@ -148,9 +164,10 @@
             // 
             // AwayPlus2
             // 
-            AwayPlus2.Location = new Point(446, 205);
+            AwayPlus2.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            AwayPlus2.Location = new Point(1094, 131);
             AwayPlus2.Name = "AwayPlus2";
-            AwayPlus2.Size = new Size(75, 23);
+            AwayPlus2.Size = new Size(95, 35);
             AwayPlus2.TabIndex = 10;
             AwayPlus2.Text = "+2";
             AwayPlus2.UseVisualStyleBackColor = true;
@@ -158,9 +175,10 @@
             // 
             // AwayPlus3
             // 
-            AwayPlus3.Location = new Point(446, 234);
+            AwayPlus3.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            AwayPlus3.Location = new Point(1094, 186);
             AwayPlus3.Name = "AwayPlus3";
-            AwayPlus3.Size = new Size(75, 23);
+            AwayPlus3.Size = new Size(95, 35);
             AwayPlus3.TabIndex = 11;
             AwayPlus3.Text = "+3";
             AwayPlus3.UseVisualStyleBackColor = true;
@@ -171,7 +189,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(74, 64, 99);
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1904, 1041);
             Controls.Add(AwayPlus3);
             Controls.Add(AwayPlus2);
             Controls.Add(AwayPlus1);
@@ -185,7 +203,7 @@
             Controls.Add(StartTimer);
             Controls.Add(TimerDisplay);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Basketball | meiga.lt";
             ResumeLayout(false);
             PerformLayout();
         }
