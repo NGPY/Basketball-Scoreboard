@@ -6,6 +6,7 @@ namespace Scoreboard
     {
         Stopwatch sw = new Stopwatch();
         Stopwatch psw = new Stopwatch();
+        int period = 1;
         public Form1()
         {
             InitializeComponent();
@@ -29,7 +30,8 @@ namespace Scoreboard
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            TimerDisplay.Text = $"{sw.ElapsedMilliseconds / 60000:00}:{(sw.ElapsedMilliseconds / 1000) - 60 * (sw.ElapsedMilliseconds / 60000):00}";
+            long time = 600000 - sw.ElapsedMilliseconds;
+            TimerDisplay.Text = $"{time / 60000:00}:{(time / 1000) - 60 * (time / 60000):00}";
             if (psw.ElapsedMilliseconds / 1000 == 24)
             {
                 timer1.Stop();
@@ -79,6 +81,21 @@ namespace Scoreboard
         private void AwayPlus3_Click(object sender, EventArgs e)
         {
             AwayScore.Text = (Convert.ToInt16(AwayScore.Text) + 3).ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (period < 4)
+            {
+
+                period++;
+                label1.Text = $"Period: {period}";
+                sw.Stop(); sw.Reset();
+                psw.Stop(); psw.Reset();
+                long time = 600000 - sw.ElapsedMilliseconds;
+                TimerDisplay.Text = $"{time / 60000:00}:{(time / 1000) - 60 * (time / 60000):00}";
+                PosessionTimer.Text = $"{(24 - psw.ElapsedMilliseconds / 1000.0):00.0}";
+            }
         }
     }
 }

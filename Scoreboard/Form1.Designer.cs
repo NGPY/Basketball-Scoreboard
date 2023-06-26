@@ -42,23 +42,26 @@
             AwayPlus1 = new Button();
             AwayPlus2 = new Button();
             AwayPlus3 = new Button();
+            button1 = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // TimerDisplay
             // 
             TimerDisplay.AutoSize = true;
             TimerDisplay.ForeColor = Color.Red;
-            TimerDisplay.Location = new Point(242, 52);
+            TimerDisplay.Location = new Point(277, 69);
             TimerDisplay.Name = "TimerDisplay";
-            TimerDisplay.Size = new Size(37, 15);
+            TimerDisplay.Size = new Size(47, 20);
             TimerDisplay.TabIndex = 0;
             TimerDisplay.Text = "Timer";
             // 
             // StartTimer
             // 
-            StartTimer.Location = new Point(285, 66);
+            StartTimer.Location = new Point(326, 88);
+            StartTimer.Margin = new Padding(3, 4, 3, 4);
             StartTimer.Name = "StartTimer";
-            StartTimer.Size = new Size(75, 23);
+            StartTimer.Size = new Size(86, 31);
             StartTimer.TabIndex = 1;
             StartTimer.Text = "Start/Stop";
             StartTimer.UseVisualStyleBackColor = true;
@@ -72,17 +75,18 @@
             // 
             PosessionTimer.AutoSize = true;
             PosessionTimer.ForeColor = Color.Goldenrod;
-            PosessionTimer.Location = new Point(446, 52);
+            PosessionTimer.Location = new Point(510, 69);
             PosessionTimer.Name = "PosessionTimer";
-            PosessionTimer.Size = new Size(95, 15);
+            PosessionTimer.Size = new Size(118, 20);
             PosessionTimer.TabIndex = 2;
             PosessionTimer.Text = " Posession Timer";
             // 
             // ResetPosession
             // 
-            ResetPosession.Location = new Point(366, 66);
+            ResetPosession.Location = new Point(418, 88);
+            ResetPosession.Margin = new Padding(3, 4, 3, 4);
             ResetPosession.Name = "ResetPosession";
-            ResetPosession.Size = new Size(109, 23);
+            ResetPosession.Size = new Size(125, 31);
             ResetPosession.TabIndex = 3;
             ResetPosession.Text = "Reset Possession";
             ResetPosession.UseVisualStyleBackColor = true;
@@ -91,26 +95,27 @@
             // HomeScore
             // 
             HomeScore.AutoSize = true;
-            HomeScore.Location = new Point(266, 149);
+            HomeScore.Location = new Point(304, 199);
             HomeScore.Name = "HomeScore";
-            HomeScore.Size = new Size(13, 15);
+            HomeScore.Size = new Size(17, 20);
             HomeScore.TabIndex = 4;
             HomeScore.Text = "0";
             // 
             // AwayScore
             // 
             AwayScore.AutoSize = true;
-            AwayScore.Location = new Point(478, 149);
+            AwayScore.Location = new Point(546, 199);
             AwayScore.Name = "AwayScore";
-            AwayScore.Size = new Size(13, 15);
+            AwayScore.Size = new Size(17, 20);
             AwayScore.TabIndex = 5;
             AwayScore.Text = "0";
             // 
             // HomePlus1
             // 
-            HomePlus1.Location = new Point(239, 176);
+            HomePlus1.Location = new Point(273, 235);
+            HomePlus1.Margin = new Padding(3, 4, 3, 4);
             HomePlus1.Name = "HomePlus1";
-            HomePlus1.Size = new Size(75, 23);
+            HomePlus1.Size = new Size(86, 31);
             HomePlus1.TabIndex = 6;
             HomePlus1.Text = "+1";
             HomePlus1.UseVisualStyleBackColor = true;
@@ -118,9 +123,10 @@
             // 
             // HomePlus2
             // 
-            HomePlus2.Location = new Point(239, 205);
+            HomePlus2.Location = new Point(273, 273);
+            HomePlus2.Margin = new Padding(3, 4, 3, 4);
             HomePlus2.Name = "HomePlus2";
-            HomePlus2.Size = new Size(75, 23);
+            HomePlus2.Size = new Size(86, 31);
             HomePlus2.TabIndex = 7;
             HomePlus2.Text = "+2";
             HomePlus2.UseVisualStyleBackColor = true;
@@ -128,9 +134,10 @@
             // 
             // HomePlus3
             // 
-            HomePlus3.Location = new Point(239, 234);
+            HomePlus3.Location = new Point(273, 312);
+            HomePlus3.Margin = new Padding(3, 4, 3, 4);
             HomePlus3.Name = "HomePlus3";
-            HomePlus3.Size = new Size(75, 23);
+            HomePlus3.Size = new Size(86, 31);
             HomePlus3.TabIndex = 8;
             HomePlus3.Text = "+3";
             HomePlus3.UseVisualStyleBackColor = true;
@@ -138,9 +145,10 @@
             // 
             // AwayPlus1
             // 
-            AwayPlus1.Location = new Point(446, 176);
+            AwayPlus1.Location = new Point(510, 235);
+            AwayPlus1.Margin = new Padding(3, 4, 3, 4);
             AwayPlus1.Name = "AwayPlus1";
-            AwayPlus1.Size = new Size(75, 23);
+            AwayPlus1.Size = new Size(86, 31);
             AwayPlus1.TabIndex = 9;
             AwayPlus1.Text = "+1";
             AwayPlus1.UseVisualStyleBackColor = true;
@@ -148,9 +156,10 @@
             // 
             // AwayPlus2
             // 
-            AwayPlus2.Location = new Point(446, 205);
+            AwayPlus2.Location = new Point(510, 273);
+            AwayPlus2.Margin = new Padding(3, 4, 3, 4);
             AwayPlus2.Name = "AwayPlus2";
-            AwayPlus2.Size = new Size(75, 23);
+            AwayPlus2.Size = new Size(86, 31);
             AwayPlus2.TabIndex = 10;
             AwayPlus2.Text = "+2";
             AwayPlus2.UseVisualStyleBackColor = true;
@@ -158,19 +167,41 @@
             // 
             // AwayPlus3
             // 
-            AwayPlus3.Location = new Point(446, 234);
+            AwayPlus3.Location = new Point(510, 312);
+            AwayPlus3.Margin = new Padding(3, 4, 3, 4);
             AwayPlus3.Name = "AwayPlus3";
-            AwayPlus3.Size = new Size(75, 23);
+            AwayPlus3.Size = new Size(86, 31);
             AwayPlus3.TabIndex = 11;
             AwayPlus3.Text = "+3";
             AwayPlus3.UseVisualStyleBackColor = true;
             AwayPlus3.Click += AwayPlus3_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(677, 151);
+            button1.Name = "button1";
+            button1.Size = new Size(106, 29);
+            button1.TabIndex = 12;
+            button1.Text = "New period";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(704, 128);
+            label1.Name = "label1";
+            label1.Size = new Size(66, 20);
+            label1.TabIndex = 13;
+            label1.Text = "Period: 1";
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Controls.Add(label1);
+            Controls.Add(button1);
             Controls.Add(AwayPlus3);
             Controls.Add(AwayPlus2);
             Controls.Add(AwayPlus1);
@@ -183,6 +214,7 @@
             Controls.Add(PosessionTimer);
             Controls.Add(StartTimer);
             Controls.Add(TimerDisplay);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -204,5 +236,7 @@
         private Button AwayPlus1;
         private Button AwayPlus2;
         private Button AwayPlus3;
+        private Button button1;
+        private Label label1;
     }
 }
