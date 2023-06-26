@@ -97,5 +97,12 @@ namespace Scoreboard
                 PosessionTimer.Text = $"{(24 - psw.ElapsedMilliseconds / 1000.0):00.0}";
             }
         }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to close this program?", "Cancel close", MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

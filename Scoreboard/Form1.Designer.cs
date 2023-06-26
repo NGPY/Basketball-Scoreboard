@@ -199,11 +199,10 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
-            Controls.Add(label1);
-            Controls.Add(button1);
             BackColor = Color.FromArgb(74, 64, 99);
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
+            Controls.Add(button1);
             Controls.Add(AwayPlus3);
             Controls.Add(AwayPlus2);
             Controls.Add(AwayPlus1);
@@ -216,6 +215,7 @@
             Controls.Add(PosessionTimer);
             Controls.Add(StartTimer);
             Controls.Add(TimerDisplay);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
